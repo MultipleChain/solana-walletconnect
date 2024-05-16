@@ -12,6 +12,10 @@
       "types": "./index.d.ts"
     }
   },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
