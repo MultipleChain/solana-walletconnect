@@ -11,6 +11,8 @@
     <script type="module">
       import WalletConnectWalletAdapter from './src/index.js'
       
+      indexedDB.deleteDatabase('WALLET_CONNECT_V2_INDEXED_DB')
+
       const wallet = new WalletConnectWalletAdapter({ 
         network: "mainnet-beta",
         options: {
