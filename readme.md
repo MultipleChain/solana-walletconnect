@@ -20,12 +20,6 @@ const adapter = new WalletConnectAdapter({
         relayUrl: 'wss://relay.walletconnect.com',
         // example walletconnect app project ID
         projectId: 'project id',
-        metadata: {
-            name: 'Example App',
-            description: 'Example App',
-            url: 'https://yourdapp-url.com',
-            icons: ['https://yourdapp-url.com/icon.png'],
-        },
     }
 });
 // connect
@@ -41,6 +35,7 @@ console.log(adapter.address);
 ### API
 
 -   `Constructor(config: WalletConnectAdapterConfig)`
+
     ```typescript
     interface WalletConnectAdapterConfig {
         /**
@@ -54,12 +49,6 @@ console.log(adapter.address);
             projectId: '<YOUR PROJECT ID>';
             // optional parameters
             relayUrl: '<YOUR RELAY URL>';
-            metadata: {
-                name: 'Wallet name';
-                description: 'A short description for your wallet';
-                url: "<YOUR WALLET'S URL>";
-                icons: ["<URL TO WALLET'S LOGO/ICON>"];
-            };
             qrcodeModalOptions?: {
                 mobileLinks?: string[];
                 desktopLinks?: string[];
